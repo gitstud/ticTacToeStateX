@@ -1,4 +1,4 @@
-install
+install:
   yarn
 
 running the project on ios sim:
