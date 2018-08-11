@@ -35,7 +35,7 @@ export class Game extends React.Component<Props, State> {
         <View style={styles.gameBoard}>
           {winner && (
             <Text style={styles.turn}>
-              {`${0} is the Winner!!!`}
+              {`${winner} is the Winner!!!`}
             </Text>
           )}
         </View>

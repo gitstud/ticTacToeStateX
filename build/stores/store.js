@@ -33,6 +33,7 @@ let GameStore = class GameStore {
         }
         const newSquares = Array.isArray(squares) ? [...squares] : Array(9).fill(undefined);
         newSquares[payload.turn] = xIsNext ? 'X' : 'O';
+        console.log(calculateWinner(newSquares));
         return {
             squares: newSquares || [],
             xIsNext: !xIsNext,

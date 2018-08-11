@@ -26,7 +26,7 @@ let Game = class Game extends React.Component {
         return (React.createElement(View, { style: styles.game },
             React.createElement(Text, { style: styles.title }, "Tic-Tac-Toe with StateX"),
             !winner && (React.createElement(Text, { style: styles.turn }, xIsNext ? 'X\'s Turn' : 'O\'s Turn')),
-            React.createElement(View, { style: styles.gameBoard }, winner && (React.createElement(Text, { style: styles.turn }, `${0} is the Winner!!!`))),
+            React.createElement(View, { style: styles.gameBoard }, winner && (React.createElement(Text, { style: styles.turn }, `${winner} is the Winner!!!`))),
             React.createElement(Board, null),
             winner && (React.createElement(TouchableOpacity, { onPress: () => new ResetState().dispatch(), style: styles.play },
                 React.createElement(Text, null, "Play Again!")))));
